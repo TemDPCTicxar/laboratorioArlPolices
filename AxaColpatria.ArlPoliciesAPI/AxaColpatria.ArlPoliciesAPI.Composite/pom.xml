@@ -18,6 +18,7 @@
     <com.axa.resource_._ReporteAccidente_to_WorkAccident_inputSchema>capp/EnterpriseServiceBus</com.axa.resource_._ReporteAccidente_to_WorkAccident_inputSchema>
     <com.axa.resource_._ReporteAccidente_to_WorkAccident_outputSchema>capp/EnterpriseServiceBus</com.axa.resource_._ReporteAccidente_to_WorkAccident_outputSchema>
     <com.axa.sequence_._ConsultsSATCompanyTransferableInSeq>capp/EnterpriseServiceBus</com.axa.sequence_._ConsultsSATCompanyTransferableInSeq>
+    <com.axa.sequence_._ARLPortalRamaA1InSeq>capp/EnterpriseServiceBus</com.axa.sequence_._ARLPortalRamaA1InSeq>
     <com.axa.endpoint_._RigthsEndPoint>capp/EnterpriseServiceBus</com.axa.endpoint_._RigthsEndPoint>
     <com.axa.endpoint_._ARLPortalChangeTypeAndEmployeeIdentificationNumberMiEndpoint>capp/EnterpriseServiceBus</com.axa.endpoint_._ARLPortalChangeTypeAndEmployeeIdentificationNumberMiEndpoint>
     <com.axa.endpoint_._ARLPortalEmployeeIngressMiEndpoint>capp/EnterpriseServiceBus</com.axa.endpoint_._ARLPortalEmployeeIngressMiEndpoint>
@@ -115,6 +116,12 @@
     <dependency>
       <groupId>com.axa.sequence</groupId>
       <artifactId>ConsultsSATCompanyTransferableInSeq</artifactId>
+      <version>1.0.0</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
+      <groupId>com.axa.sequence</groupId>
+      <artifactId>ARLPortalRamaA1InSeq</artifactId>
       <version>1.0.0</version>
       <type>xml</type>
     </dependency>
