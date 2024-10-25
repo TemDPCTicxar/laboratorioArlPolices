@@ -18,6 +18,7 @@
     <com.axa.resource_._ReporteAccidente_to_WorkAccident_inputSchema>capp/EnterpriseServiceBus</com.axa.resource_._ReporteAccidente_to_WorkAccident_inputSchema>
     <com.axa.resource_._ReporteAccidente_to_WorkAccident_outputSchema>capp/EnterpriseServiceBus</com.axa.resource_._ReporteAccidente_to_WorkAccident_outputSchema>
     <com.axa.sequence_._ConsultsSATCompanyTransferableInSeq>capp/EnterpriseServiceBus</com.axa.sequence_._ConsultsSATCompanyTransferableInSeq>
+    <com.axa.sequence_._ARLPortalRamaA1InSeq>capp/EnterpriseServiceBus</com.axa.sequence_._ARLPortalRamaA1InSeq>
     <com.axa.endpoint_._RigthsEndPoint>capp/EnterpriseServiceBus</com.axa.endpoint_._RigthsEndPoint>
     <com.axa.endpoint_._ARLPortalChangeTypeAndEmployeeIdentificationNumberMiEndpoint>capp/EnterpriseServiceBus</com.axa.endpoint_._ARLPortalChangeTypeAndEmployeeIdentificationNumberMiEndpoint>
     <com.axa.endpoint_._ARLPortalEmployeeIngressMiEndpoint>capp/EnterpriseServiceBus</com.axa.endpoint_._ARLPortalEmployeeIngressMiEndpoint>
@@ -27,7 +28,6 @@
     <com.axa.endpoint_._GetForLegalizationEndpoint>capp/EnterpriseServiceBus</com.axa.endpoint_._GetForLegalizationEndpoint>
     <com.axa.endpoint_._HealthTransferableEmployerEndpoint>capp/EnterpriseServiceBus</com.axa.endpoint_._HealthTransferableEmployerEndpoint>
     <com.axa.metadata_._ArlPoliciesAPI_metadata>capp/EnterpriseServiceBus</com.axa.metadata_._ArlPoliciesAPI_metadata>
-    <com.axa.endpoint_._AS400ActualizaGastoPrevencionEndpoint>capp/EnterpriseServiceBus</com.axa.endpoint_._AS400ActualizaGastoPrevencionEndpoint>
     <com.axa.sequence_._CompleteEnrollmentsInSeq>capp/EnterpriseServiceBus</com.axa.sequence_._CompleteEnrollmentsInSeq>
     <com.axa.endpoint_._ARLPortalEmployeeGetMiEndpoint>capp/EnterpriseServiceBus</com.axa.endpoint_._ARLPortalEmployeeGetMiEndpoint>
     <com.axa.sequence_._ARLPortalEmployeeBulkInSeq>capp/EnterpriseServiceBus</com.axa.sequence_._ARLPortalEmployeeBulkInSeq>
@@ -114,8 +114,32 @@
       <type>zip</type>
     </dependency>
     <dependency>
+      <groupId>com.axa.sequence</groupId>
+      <artifactId>ConsultsSATCompanyTransferableInSeq</artifactId>
+      <version>1.0.0</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
+      <groupId>com.axa.sequence</groupId>
+      <artifactId>ARLPortalRamaA1InSeq</artifactId>
+      <version>1.0.0</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
       <groupId>com.axa.endpoint</groupId>
       <artifactId>RigthsEndPoint</artifactId>
+      <version>1.0.0</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
+      <groupId>com.axa.endpoint</groupId>
+      <artifactId>ARLPortalChangeTypeAndEmployeeIdentificationNumberMiEndpoint</artifactId>
+      <version>1.0.0</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
+      <groupId>com.axa.endpoint</groupId>
+      <artifactId>ARLPortalEmployeeIngressMiEndpoint</artifactId>
       <version>1.0.0</version>
       <type>xml</type>
     </dependency>
@@ -162,6 +186,24 @@
       <type>xml</type>
     </dependency>
     <dependency>
+      <groupId>com.axa.endpoint</groupId>
+      <artifactId>ARLPortalEmployeeGetMiEndpoint</artifactId>
+      <version>1.0.0</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
+      <groupId>com.axa.sequence</groupId>
+      <artifactId>ARLPortalEmployeeBulkInSeq</artifactId>
+      <version>1.0.0</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
+      <groupId>com.axa.endpoint</groupId>
+      <artifactId>ConsultsArrearSATEndPoint</artifactId>
+      <version>1.0.0</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
       <groupId>com.axa.resource</groupId>
       <artifactId>vrpca114JSON_to_vrpca114XML_outputSchema</artifactId>
       <version>1.0.0</version>
@@ -187,7 +229,31 @@
     </dependency>
     <dependency>
       <groupId>com.axa.endpoint</groupId>
+      <artifactId>ARLPortalSelfEmployeeIngressMiEndpoint</artifactId>
+      <version>1.0.0</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
+      <groupId>com.axa.sequence</groupId>
+      <artifactId>ARLPortalSelfEmployeeIngressInSeq</artifactId>
+      <version>1.0.0</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
+      <groupId>com.axa.endpoint</groupId>
       <artifactId>RejectionreasonsEndPoint</artifactId>
+      <version>1.0.0</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
+      <groupId>com.axa.endpoint</groupId>
+      <artifactId>ARLPortalNoveltyRegisterMiEndpoint</artifactId>
+      <version>1.0.0</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
+      <groupId>com.axa.endpoint</groupId>
+      <artifactId>ARLPortalRegisterNewNoCashIncomePersonalMiEndpoint</artifactId>
       <version>1.0.0</version>
       <type>xml</type>
     </dependency>
@@ -198,14 +264,32 @@
       <type>xml</type>
     </dependency>
     <dependency>
+      <groupId>com.axa.endpoint</groupId>
+      <artifactId>ConsultsInfoSATCompanyAffiliationEndPoint</artifactId>
+      <version>1.0.0</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
       <groupId>com.axa.sequence</groupId>
       <artifactId>ClaimsUpdateLockStatusInSequence</artifactId>
       <version>1.0.0</version>
       <type>xml</type>
     </dependency>
     <dependency>
+      <groupId>com.axa.sequence</groupId>
+      <artifactId>ConsultsArrearSATInseq</artifactId>
+      <version>1.0.0</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
       <groupId>com.axa.endpoint</groupId>
       <artifactId>InvollmentEndpoint</artifactId>
+      <version>1.0.0</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
+      <groupId>com.axa.endpoint</groupId>
+      <artifactId>ConsultsSATCompanyTransferableEndpoint</artifactId>
       <version>1.0.0</version>
       <type>xml</type>
     </dependency>
@@ -234,6 +318,12 @@
       <type>xml</type>
     </dependency>
     <dependency>
+      <groupId>com.axa.sequence</groupId>
+      <artifactId>ARLPortalIneffectiveAffiliationsBulkInSeq</artifactId>
+      <version>1.0.0</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
       <groupId>com.axa.endpoint</groupId>
       <artifactId>HealthDefaultDebtEndpoint</artifactId>
       <version>1.0.0</version>
@@ -242,6 +332,12 @@
     <dependency>
       <groupId>com.axa.sequence</groupId>
       <artifactId>InvollmentInSequence</artifactId>
+      <version>1.0.0</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
+      <groupId>com.axa.sequence</groupId>
+      <artifactId>PatchSpendingPreventionInSequence</artifactId>
       <version>1.0.0</version>
       <type>xml</type>
     </dependency>
@@ -264,6 +360,12 @@
       <type>zip</type>
     </dependency>
     <dependency>
+      <groupId>com.axa.sequence</groupId>
+      <artifactId>ARLPortalNoveltyRegisterInSeq</artifactId>
+      <version>1.0.0</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
       <groupId>com.axa.endpoint</groupId>
       <artifactId>GetWorkAccidentInformationEndpoint</artifactId>
       <version>1.0.0</version>
@@ -282,8 +384,38 @@
       <type>zip</type>
     </dependency>
     <dependency>
+      <groupId>com.axa.endpoint</groupId>
+      <artifactId>ARLPortalRegisterNewNoCashIncomeBulkMiEndpoint</artifactId>
+      <version>1.0.0</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
+      <groupId>com.axa.sequence</groupId>
+      <artifactId>ARLPortalIneffectiveAffiliationsInSeq</artifactId>
+      <version>1.0.0</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
+      <groupId>com.axa.sequence</groupId>
+      <artifactId>ARLPortalCompanyBulkInSeq</artifactId>
+      <version>1.0.0</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
       <groupId>com.axa.sequence</groupId>
       <artifactId>CheckInvollmentInformationOutSequence</artifactId>
+      <version>1.0.0</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
+      <groupId>com.axa.sequence</groupId>
+      <artifactId>PatchSpendingPreventionFaultSequence</artifactId>
+      <version>1.0.0</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
+      <groupId>com.axa.sequence</groupId>
+      <artifactId>ARLPortalCompanyGetInSeq</artifactId>
       <version>1.0.0</version>
       <type>xml</type>
     </dependency>
@@ -298,6 +430,18 @@
       <artifactId>ConsultaSiniestroPorLegalizar_to_claimsLegalizations</artifactId>
       <version>1.0.0</version>
       <type>zip</type>
+    </dependency>
+    <dependency>
+      <groupId>com.axa.sequence</groupId>
+      <artifactId>ARLPortalEmployeeIngressInSeq</artifactId>
+      <version>1.0.0</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
+      <groupId>com.axa.sequence</groupId>
+      <artifactId>ConsultsInfoSATCompanyAffiliationInSeq</artifactId>
+      <version>1.0.0</version>
+      <type>xml</type>
     </dependency>
     <dependency>
       <groupId>com.axa.resource</groupId>
@@ -319,7 +463,19 @@
     </dependency>
     <dependency>
       <groupId>com.axa.sequence</groupId>
+      <artifactId>ARLPortalEmployeeGetInSeq</artifactId>
+      <version>1.0.0</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
+      <groupId>com.axa.sequence</groupId>
       <artifactId>ClaimsWorkAccidentInSequence</artifactId>
+      <version>1.0.0</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
+      <groupId>com.axa.endpoint</groupId>
+      <artifactId>ARLPortalEmployeeBulkMiEndpoint</artifactId>
       <version>1.0.0</version>
       <type>xml</type>
     </dependency>
@@ -332,6 +488,12 @@
     <dependency>
       <groupId>com.axa.endpoint</groupId>
       <artifactId>UpdateLockStatusEndpoint</artifactId>
+      <version>1.0.0</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
+      <groupId>com.axa.sequence</groupId>
+      <artifactId>PatchSpendingPreventionOutSequence</artifactId>
       <version>1.0.0</version>
       <type>xml</type>
     </dependency>
@@ -378,106 +540,16 @@
       <type>zip</type>
     </dependency>
     <dependency>
-      <groupId>com.axa.resource</groupId>
-      <artifactId>ReporteAccidente_to_WorkAccident</artifactId>
-      <version>1.0.0</version>
-      <type>zip</type>
-    </dependency>
-    <dependency>
-      <groupId>com.axa.endpoint</groupId>
-      <artifactId>ConsultsArrearSATEndPoint</artifactId>
-      <version>1.0.0</version>
-      <type>xml</type>
-    </dependency>
-    <dependency>
-      <groupId>com.axa.endpoint</groupId>
-      <artifactId>ConsultsInfoSATCompanyAffiliationEndPoint</artifactId>
-      <version>1.0.0</version>
-      <type>xml</type>
-    </dependency>
-    <dependency>
-      <groupId>com.axa.sequence</groupId>
-      <artifactId>ConsultsArrearSATInseq</artifactId>
-      <version>1.0.0</version>
-      <type>xml</type>
-    </dependency>
-    <dependency>
-      <groupId>com.axa.sequence</groupId>
-      <artifactId>ConsultsInfoSATCompanyAffiliationInSeq</artifactId>
-      <version>1.0.0</version>
-      <type>xml</type>
-    </dependency>
-    <dependency>
-      <groupId>com.axa.endpoint</groupId>
-      <artifactId>ConsultsSATCompanyTransferableEndpoint</artifactId>
-      <version>1.0.0</version>
-      <type>xml</type>
-    </dependency>
-    <dependency>
-      <groupId>com.axa.sequence</groupId>
-      <artifactId>ConsultsSATCompanyTransferableInSeq</artifactId>
-      <version>1.0.0</version>
-      <type>xml</type>
-    </dependency>
-    <dependency>
-      <groupId>com.axa.endpoint</groupId>
-      <artifactId>ARLPortalChangeTypeAndEmployeeIdentificationNumberMiEndpoint</artifactId>
-      <version>1.0.0</version>
-      <type>xml</type>
-    </dependency>
-    <dependency>
-      <groupId>com.axa.endpoint</groupId>
-      <artifactId>ARLPortalRegisterNewNoCashIncomeBulkMiEndpoint</artifactId>
-      <version>1.0.0</version>
-      <type>xml</type>
-    </dependency>
-    <dependency>
-      <groupId>com.axa.endpoint</groupId>
-      <artifactId>ARLPortalRegisterNewNoCashIncomePersonalMiEndpoint</artifactId>
-      <version>1.0.0</version>
-      <type>xml</type>
-    </dependency>
-    <dependency>
-      <groupId>com.axa.sequence</groupId>
-      <artifactId>ARLPortalIneffectiveAffiliationsBulkInSeq</artifactId>
-      <version>1.0.0</version>
-      <type>xml</type>
-    </dependency>
-    <dependency>
-      <groupId>com.axa.sequence</groupId>
-      <artifactId>ARLPortalIneffectiveAffiliationsInSeq</artifactId>
-      <version>1.0.0</version>
-      <type>xml</type>
-    </dependency>
-    <dependency>
       <groupId>com.axa.sequence</groupId>
       <artifactId>ARLPortalUpdateDocumentTypeNoveltyInSeq</artifactId>
       <version>1.0.0</version>
       <type>xml</type>
     </dependency>
     <dependency>
-      <groupId>com.axa.endpoint</groupId>
-      <artifactId>AS400ActualizaGastoPrevencionEndpoint</artifactId>
+      <groupId>com.axa.resource</groupId>
+      <artifactId>ReporteAccidente_to_WorkAccident</artifactId>
       <version>1.0.0</version>
-      <type>xml</type>
-    </dependency>
-    <dependency>
-      <groupId>com.axa.sequence</groupId>
-      <artifactId>PatchSpendingPreventionFaultSequence</artifactId>
-      <version>1.0.0</version>
-      <type>xml</type>
-    </dependency>
-    <dependency>
-      <groupId>com.axa.sequence</groupId>
-      <artifactId>PatchSpendingPreventionInSequence</artifactId>
-      <version>1.0.0</version>
-      <type>xml</type>
-    </dependency>
-    <dependency>
-      <groupId>com.axa.sequence</groupId>
-      <artifactId>PatchSpendingPreventionOutSequence</artifactId>
-      <version>1.0.0</version>
-      <type>xml</type>
+      <type>zip</type>
     </dependency>
     <dependency>
       <groupId>com.axa.endpoint</groupId>
@@ -486,80 +558,8 @@
       <type>xml</type>
     </dependency>
     <dependency>
-      <groupId>com.axa.sequence</groupId>
-      <artifactId>ARLPortalCompanyGetInSeq</artifactId>
-      <version>1.0.0</version>
-      <type>xml</type>
-    </dependency>
-    <dependency>
       <groupId>com.axa.endpoint</groupId>
       <artifactId>ARLPortalCompanyBulkMiEndpoint</artifactId>
-      <version>1.0.0</version>
-      <type>xml</type>
-    </dependency>
-    <dependency>
-      <groupId>com.axa.endpoint</groupId>
-      <artifactId>ARLPortalEmployeeBulkMiEndpoint</artifactId>
-      <version>1.0.0</version>
-      <type>xml</type>
-    </dependency>
-    <dependency>
-      <groupId>com.axa.endpoint</groupId>
-      <artifactId>ARLPortalEmployeeGetMiEndpoint</artifactId>
-      <version>1.0.0</version>
-      <type>xml</type>
-    </dependency>
-    <dependency>
-      <groupId>com.axa.sequence</groupId>
-      <artifactId>ARLPortalCompanyBulkInSeq</artifactId>
-      <version>1.0.0</version>
-      <type>xml</type>
-    </dependency>
-    <dependency>
-      <groupId>com.axa.sequence</groupId>
-      <artifactId>ARLPortalEmployeeBulkInSeq</artifactId>
-      <version>1.0.0</version>
-      <type>xml</type>
-    </dependency>
-    <dependency>
-      <groupId>com.axa.sequence</groupId>
-      <artifactId>ARLPortalEmployeeGetInSeq</artifactId>
-      <version>1.0.0</version>
-      <type>xml</type>
-    </dependency>
-    <dependency>
-      <groupId>com.axa.endpoint</groupId>
-      <artifactId>ARLPortalEmployeeIngressMiEndpoint</artifactId>
-      <version>1.0.0</version>
-      <type>xml</type>
-    </dependency>
-    <dependency>
-      <groupId>com.axa.endpoint</groupId>
-      <artifactId>ARLPortalNoveltyRegisterMiEndpoint</artifactId>
-      <version>1.0.0</version>
-      <type>xml</type>
-    </dependency>
-    <dependency>
-      <groupId>com.axa.endpoint</groupId>
-      <artifactId>ARLPortalSelfEmployeeIngressMiEndpoint</artifactId>
-      <version>1.0.0</version>
-      <type>xml</type>
-    </dependency>
-    <dependency>
-      <groupId>com.axa.sequence</groupId>
-      <artifactId>ARLPortalEmployeeIngressInSeq</artifactId>
-      <version>1.0.0</version>
-      <type>xml</type>
-    </dependency>
-    <dependency>
-      <groupId>com.axa.sequence</groupId>
-      <artifactId>ARLPortalNoveltyRegisterInSeq</artifactId>
-      <version>1.0.0</version>
-      <type>xml</type>
-    </dependency>
-    <dependency>
-      <groupId>com.axa.sequence</groupId>
-      <artifactId>ARLPortalSelfEmployeeIngressInSeq</artifactId>
       <version>1.0.0</version>
       <type>xml</type>
     </dependency>

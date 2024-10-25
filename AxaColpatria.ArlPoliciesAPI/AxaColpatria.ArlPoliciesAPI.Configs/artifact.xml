@@ -191,4 +191,10 @@
     <artifact name="ARLPortalNoveltyRegisterInSeq" groupId="com.axa.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
         <file>src/main/synapse-config/sequences/ARLPortalNoveltyRegisterInSeq.xml</file>
     </artifact>
+    <artifact name="ARLPortalRamaB1InSeq" groupId="com.axa.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/sequences/ARLPortalRamaB1InSeq.xml</file>
+     </artifact>
+    <artifact name="ARLPortalRamaA1InSeq" groupId="com.axa.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/sequences/ARLPortalRamaA1InSeq.xml</file>
+    </artifact>
 </artifacts>
